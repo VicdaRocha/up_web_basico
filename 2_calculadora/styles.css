@@ -1,0 +1,11 @@
+main{
+    display:flex;
+    flex-direction: column;
+    width:20rem;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    text-align: center;
+}
