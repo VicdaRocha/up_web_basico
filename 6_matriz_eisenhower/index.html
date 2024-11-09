@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Eisenhower</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Matriz de Eisenhower</h1>
+        <div class="matriz">
+            <div class="celula cel1">
+
+                <h3>Importante e Urgente</h3>
+                <div class="quadro" id="quadro1"></div>
+
+            </div>
+            <div class="celula cel2">
+
+                <h3>Importante, mas Não Urgente</h3>
+                <div class="quadro" id="quadro2"></div>
+
+            </div>
+            <div class="celula cel3">
+
+                <h3>Não Importante, mas Urgente</h3>
+                <div class="quadro" id="quadro3"></div>
+
+            </div>
+            <div class="celula cel4">
+
+                <h3>Não Importante e Não Urgente</h3>
+                <div class="quadro" id="quadro4"></div>
+
+            </div>
+        </div>
+        <div class="criar">
+            <input type="input-atividade" id="input-atividade" placeholder="Adicionar nova atividade">
+            <select name="importancia" id="importancia">
+                <option value="1">Importante e Urgente</option>
+                <option value="2">Importante, mas Não Urgente</option>
+                <option value="3">Não Importante, mas Urgente</option>
+                <option value="4">Não Importante e Não Urgente</option>
+            </select>
+            <button id="botao-adicionar">Adicionar</button>
+        </div>
+
+    </div>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./chat.js"></script>
+</body>
+</html>
