@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-color: coral;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    margin: 20px;
+    width:600px;
+    height:600px;
+
+    background-color:burlywood;
+    border:20px dashed brown;
+
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.even-row:nth-child(odd){
+    background-color: brown;
+}
+
+.odd-row:nth-child(even){
+    background-color: brown;
+}
+
+.tile{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pond.black{
+    background-image: url('./assets/pecas/peao-preto.png');
+}
+
+.rook.black{
+    background-image: url('./assets/pecas/torre-preta.png');
+}
+
+.knight.black{
+    background-image: url('./assets/pecas/cavalo-preto.png');
+}
+
+.bishop.black{
+    background-image: url('./assets/pecas/bispo-preto.png');
+}
+
+.queen.black{
+    background-image: url('./assets/pecas/rainha-preta.png');
+}
+
+.king.black{
+    background-image: url('./assets/pecas/rei-preto.png');
+}
+
+.pond.white{
+    background-image: url('./assets/pecas/peao-branco.png');
+}
+
+.rook.white{
+    background-image: url('./assets/pecas/torre-branca.png');
+}
+
+.knight.white{
+    background-image: url('./assets/pecas/cavalo-branco.png');
+}
+
+.bishop.white{
+    background-image: url('./assets/pecas/bispo-branco.png');
+}
+
+.queen.white{
+    background-image: url('./assets/pecas/rainha-branca.png');
+}
+
+.king.white{
+    background-image: url('./assets/pecas/rei-branco.png');
+}
+
+.tile > div {
+    height:80%;
+    width: 80%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
